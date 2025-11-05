@@ -7,7 +7,10 @@ body {
   padding: 0;
 }
 
-header, nav, main, footer {
+header,
+nav,
+main,
+footer {
   margin: 0 auto;
   max-width: 900px;
   padding: 1em;
@@ -21,9 +24,12 @@ header {
 h1 {
   color: #cc0000;
   margin: 0.2em 0;
+  font-size: 2.2em;
+  line-height: 1.2;
 }
 
-.subtitle, .site-subtitle {
+.subtitle,
+.site-subtitle {
   color: #76777b;
   font-size: 1em;
   margin: 0.2em 0 1em 0;
@@ -45,6 +51,7 @@ nav a {
   padding: 0.4em 0.8em;
   border-radius: 4px;
   font-weight: bold;
+  transition: background-color 0.2s ease;
 }
 
 nav a:hover,
@@ -56,12 +63,60 @@ main {
   padding-top: 1em;
 }
 
-h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   color: #cc0000;
+  line-height: 1.25;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  font-size: 2.2em;
+  margin-top: 0.3em;
+  margin-bottom: 0.1em;
+  letter-spacing: -0.5px;
+}
+
+h2 {
+  font-size: 1.7em;
+  margin-top: 1.4em;
+  margin-bottom: 0.4em;
+  border-bottom: 2px solid #cc0000;
+  padding-bottom: 0.2em;
+}
+
+h3 {
+  font-size: 1.3em;
+  margin-top: 1.2em;
+  margin-bottom: 0.3em;
+  color: #990000;
+  font-weight: bold;
+}
+
+h4 {
+  font-size: 1.1em;
+  margin-top: 1em;
+  margin-bottom: 0.2em;
+  color: #333;
+  font-style: italic;
+}
+
+p {
+  margin-top: 0.3em;
+  margin-bottom: 1em;
+}
+
+h2 + p,
+h3 + p,
+h4 + p {
+  margin-top: 0.2em;
 }
 
 a {
   color: #cc0000;
+  text-decoration: underline;
 }
 
 a:hover {
@@ -71,15 +126,6 @@ a:hover {
 .modules-list ul {
   list-style-type: square;
   padding-left: 1.5em;
-}
-
-footer {
-  border-top: 3px solid #cc0000;
-  text-align: center;
-  font-size: 0.9em;
-  color: #76777b;
-  padding: 1em 0;
-  margin-top: 2em;
 }
 
 .sidebar {
@@ -97,6 +143,21 @@ figure {
 figcaption {
   font-size: 0.9em;
   color: #76777b;
+}
+
+article > section {
+  margin-bottom: 2em;
+  padding-bottom: 1em;
+  border-bottom: 1px dashed #ddd;
+}
+
+footer {
+  border-top: 3px solid #cc0000;
+  text-align: center;
+  font-size: 0.9em;
+  color: #76777b;
+  padding: 1em 0;
+  margin-top: 2em;
 }
 
 @media (max-width: 600px) {
